@@ -64,6 +64,23 @@
 		wordspanel.pinyin4.text = "";
 		wordspanel.word4.text = "?";
 
+		//add flash effect on word1
+		var flashwords = "圆缘预案";
+		for(var i=0;i<flashwords.length;i++)
+		{
+			var newlabel = new Laya.Label(flashwords[i]);
+			
+			//newlabel.x = wordspanel.word1.x;
+			newlabel.y = wordspanel.word1.y;
+			newlabel.width = wordspanel.word1.width;
+			newlabel.height = wordspanel.word1.height;
+			newlabel.fontSize = wordspanel.word1.fontSize;
+			newlabel.align = wordspanel.word1.align;
+			newlabel.valign = wordspanel.word1.valign;
+			newlabel.color = wordspanel.word1.color;
+			wordspanel._word1.addChild(newlabel);
+		}
+
 
 		function onBtnReadmeClick()
 		{			

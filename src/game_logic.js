@@ -48,18 +48,14 @@
 
     _proto.initWithJson = function(jsonstr){
         var newArr = JSON.parse(jsonstr);   
-        for(var i=0;i<newArr.length;i++)
+        for(var i=0;i < newArr.length;i++)
         {            
             var str = "{" + newArr[i] + "}";
             var userinfo = JSON.parse(str);
             playerList.insert(userinfo.name, new player(userinfo.name,userinfo.words,userinfo.time));   
+            currentWord = userinfo;//refresh everytime
         }
-        console.log("initWithJson");
-        if(newArr.length > 0){
-            console.log("init currentwords");
-            currentWord = newArr[newArr.length -1];
-        }
-            
+        console.log("initWithJson ");                    
     }
 
     _proto.dumpPlayerList = function(){

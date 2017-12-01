@@ -65,7 +65,7 @@
                         {
                             "x":45,
                             "type":"Label",
-                            "props":{"y":5,"width":62,"var":"word1","valign":"middle","text":"人","height":64,"fontSize":25,"color":"#ffffff","centerX":0,"align":"center"},
+                            "props":{"width":62,"var":"word1","valign":"middle","text":"人","height":64,"fontSize":25,"color":"#ffffff","centerY":0,"centerX":0,"align":"center"},
                             "nodeParent":7,
                             "label":"Label(word1)",
                             "isDirectory":false,
