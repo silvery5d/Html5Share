@@ -51,6 +51,20 @@
 		this.lst_players.array = arr;//给list赋值更改list的显示			
 		this.lst_players.renderHandler = new Handler(this, onListRender);//还可以自定义list渲染方式，可以打开下面注释看一下效果
 
+
+		console.log(this.topicpanel);
+		var wordspanel = this.topicpanel;
+		var words = _gamelogic.currentWord().words;
+		wordspanel.pinyin1.text = CC2PY(words[0]);
+		wordspanel.word1.text = words[0];
+		wordspanel.pinyin2.text = "";
+		wordspanel.word2.text = "?";
+		wordspanel.pinyin3.text = "";
+		wordspanel.word3.text = "?";
+		wordspanel.pinyin4.text = "";
+		wordspanel.word4.text = "?";
+
+
 		function onBtnReadmeClick()
 		{			
 		//	Laya.stage.removeChild(this);

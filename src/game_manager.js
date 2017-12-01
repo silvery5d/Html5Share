@@ -50,7 +50,6 @@
         var _this = this;      
         
         game_logic = new GameLogic();
-        game_logic.initGame();        
     }
 
     _proto.startGame = function () {
